@@ -1,4 +1,42 @@
-<! CSS for Annabeth Lynch Author Website
-.body {
-    background-image: url(85128);
+
+body {
+    background-image: url("ALBbackground\(white\).png");
+    background-size: 125rem;
+    background-repeat: no-repeat;
+    background-position: stretch;
+    width: 50%;
+    border: 1px solid black;
+}
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    background-color: transparent;
+    ;
+    
+}
+
+li {
+    display: inline;
+    color: transparent;
+}
+
+li a:hover{
+    background-color: blueviolet;
+}
+li b:hover{
+    background-color: blue;
+
+}
+
+
+.nav {
+    background-color: transparent;
 }

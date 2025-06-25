@@ -1,42 +1,94 @@
 
 body {
-    background-image: url("ALBbackground\(white\).png");
     background-size: 125rem;
-    background-repeat: no-repeat;
-    background-position: stretch;
     width: 50%;
-    border: 1px solid black;
 }
 html {
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-ul {
+
+.mainNav {
+    display: inline;
     list-style-type: none;
-    margin: 20px;
-    padding: 0;
-    background-color: transparent;
-    ;
-    
+    margin: 0;
+    padding: 5px;
+  
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 600px;
+    text-align: center;
+    font-family:cursive Georgia, serif;
+    font-size: larger;
+}
+
+
+
+ul {
+    height: 100px;
 }
 
 li {
     display: inline;
-    color: transparent;
+
 }
 
-li a:hover{
+.liHome a:hover {
+    background-color: rgb(114, 114, 222);
+}
+
+.liBio a:hover {
+    background-color: deeppink;
+}
+
+.liStories a:hover {
     background-color: blueviolet;
 }
-li b:hover{
-    background-color: blue;
 
+.worksPublished {
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
 }
 
+.logo {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.authorPhoto {
+    height: 20rem;
+    
+}
 
-.nav {
-    background-color: transparent;
+.goon1 {
+    height: 300px;
+}
+
+.problemPhoto {
+      height: 300px;
+    width: 200px;
+}
+.crownPhoto {
+     height: 300px;
+    width: 200px;
+}
+
+.foilsPhoto {
+        height: 300px;
+    width: 200px;
+}
+.fairiesPhoto {
+    height: 300px;
+    width: 200px;
+}
+
+footer {
+    position: fixed;
 }

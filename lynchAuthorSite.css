@@ -1,94 +1,108 @@
-
-body {
-    background-size: 125rem;
-    width: 50%;
-}
-html {
-    width: 150%;
-    height: 150%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
 }
 
-.mainNav {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
-  
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #eb3aa4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 600px;
-    text-align: center;
-    font-family:cursive Georgia, serif;
-    font-size: larger;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #8a04c7;
+  color: rgb(255, 255, 255);
 }
 
-
-
-ul {
-    height: 100px;
-}
-
-li {
-    display: inline;
-
-}
-
-.liHome a:hover {
-    background-color: rgb(114, 114, 222);
-}
-
-.liBio a:hover {
-    background-color: deeppink;
-}
-
-.liStories a:hover {
-    background-color: blueviolet;
-}
-
-.worksPublished {
-    display: grid;
-    align-content: center;
-    grid-template-columns: auto auto;
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #0a2df2;
+  color: rgb(255, 255, 255);
 }
 
 .logo {
-    float: left;
-    height: 100px;
-    width: 100px;
-}
-.authorPhoto {
-    height: 20rem;
-    
+    float:right;
+    width: inherit;
+    height: 45px;
 }
 
-.goon1 {
-    height: 300px;
+.logo2 {
+    float:left;
+    width: inherit;
+    height: 45px;
 }
 
-.problemPhoto {
-      height: 300px;
-    width: 200px;
-}
-.crownPhoto {
-     height: 300px;
-    width: 200px;
+.bottomNav {
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-.foilsPhoto {
-        height: 300px;
-    width: 200px;
-}
-.fairiesPhoto {
-    height: 300px;
-    width: 200px;
+.bottomNav a {
+  color: #eb3aa4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
 }
 
-footer {
-    position: fixed;
+.holographic-container {
+  display: flex;
+  float: right;
+  height: 100px;
+  background: transparent;
+}
+
+.holographic-card {
+  width: 50px;
+  height: 50px;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card h2 {
+  color: rgb(6, 104, 215);
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }

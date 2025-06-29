@@ -1,6 +1,10 @@
+body {
+ font-family: 'Apple Chancery', sans-serif;
+}
 .topnav {
   background-color: transparent;
   overflow: hidden;
+  position: relative;
 }
 
 /* Style the links inside the navigation bar */
@@ -11,6 +15,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 23px;
+  font-family: 'Apple Chancery', sans-serif;
 }
 
 /* Change the color of links on hover */
@@ -24,13 +29,13 @@
   background-color: #0a2df2;
   color: rgb(255, 255, 255);
 }
-
+/* author logo stats top nav */
 .logo {
     float:right;
     width: inherit;
     height: 45px;
 }
-
+/*author logo stats bottom nav */
 .logo2 {
     float:left;
     width: inherit;
@@ -39,9 +44,11 @@
 
 .bottomNav {
     background-color: transparent;
+    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    bottom: 0;
 }
 
 .bottomNav a {
@@ -92,7 +99,7 @@
     transparent 30%, 
     rgba(0,255,255,0.3)
   );
-  transform: rotate(-45deg);
+  transform: rotate(-75deg);
   transition: all 0.5s ease;
   opacity: 0;
 }
@@ -105,4 +112,62 @@
 .holographic-card:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
+}
+
+.authorPhoto {
+  height: 300px;
+  position: relative;
+  top: 10px;
+  float:left;
+}
+
+.goon1 {
+  height: 200px;
+  position: relative;
+  float: right;
+  right:470px;
+  bottom: 10px;
+}
+
+fieldset {
+  border: 0;
+}
+.newsBox {
+  height: 144px;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Apple Chancery', sans-serif; 
+  border:#0a2df2 5px solid;
+  text-align: center;
+                           
+}
+
+.giveBox {
+  height: 144px;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Apple Chancery', sans-serif;
+  border: #8a04c7 5px solid;
+  text-align: center;
+                                                
+}
+
+.appearBox {
+  height: 144px;
+  width: ;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Apple Chancery', sans-serif;
+  border: #eb3aa4 5px solid;
+  text-align: center;
+                                                
+}
+
+.polls {
+  height: 144px;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Apple Chancery', sans-serif;
+  border: #000000 5px solid;
+  text-align: center;
 }

@@ -162,12 +162,3 @@ fieldset {
   text-align: center;
                                                 
 }
-
-.polls {
-  height: 144px;
-  overflow: scroll;
-  overflow-x: hidden;
-  font-family: 'Apple Chancery', sans-serif;
-  border: #000000 5px solid;
-  text-align: center;
-}

@@ -1,10 +1,17 @@
 body {
  font-family: 'Apple Chancery', sans-serif;
+ background-image: url(ALBbackground\(white\).png);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+ background-size:cover;
 }
 .topnav {
+  display: flex;
   background-color: transparent;
   overflow: hidden;
   position: relative;
+  justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -18,6 +25,7 @@ body {
   font-family: 'Apple Chancery', sans-serif;
 }
 
+
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #8a04c7;
@@ -26,7 +34,7 @@ body {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #0a2df2;
+  background-color: #000000;
   color: rgb(255, 255, 255);
 }
 /* author logo stats top nav */
@@ -42,6 +50,7 @@ body {
     height: 45px;
 }
 
+/* bottom nav stlyes */
 .bottomNav {
     background-color: transparent;
     position: relative;
@@ -59,6 +68,7 @@ body {
   font-size: 23px;
 }
 
+/*bottom nav link styles */
 .holographic-container {
   display: flex;
   float: right;
@@ -94,9 +104,9 @@ body {
   width: 200%;
   height: 200%;
   background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
+    0deg,
+    transparent,
+    transparent 30%,
     rgba(0,255,255,0.3)
   );
   transform: rotate(-75deg);
@@ -114,21 +124,46 @@ body {
   transform: rotate(-45deg) translateY(100%);
 }
 
+/* site photos and styles */
 .authorPhoto {
   height: 300px;
-  position: relative;
-  top: 10px;
-  float:left;
+  border-radius: 24px;
 }
 
 .goon1 {
   height: 200px;
-  position: relative;
-  float: right;
-  right:470px;
+  right:4700px;
   bottom: 10px;
 }
 
+.stProblem {
+  max-height: 500px;
+  min-height: 300px;
+  max-width: 500px;
+  min-width: 300px
+}
+
+.stCrown {
+  min-height: 500px;
+  max-height: 300px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.stFairy {
+  min-height: 500px;
+  max-height: 300px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.stFoil {
+   min-height: 500px;
+  max-height: 300px;
+ width: 330px;
+}
+
+/* events page styles */
 fieldset {
   border: 0;
 }
@@ -136,10 +171,10 @@ fieldset {
   height: 144px;
   overflow: scroll;
   overflow-x: hidden;
-  font-family: 'Apple Chancery', sans-serif; 
+  font-family: 'Apple Chancery', sans-serif;
   border:#0a2df2 5px solid;
   text-align: center;
-                           
+
 }
 
 .giveBox {
@@ -149,7 +184,7 @@ fieldset {
   font-family: 'Apple Chancery', sans-serif;
   border: #8a04c7 5px solid;
   text-align: center;
-                                                
+
 }
 
 .appearBox {
@@ -160,5 +195,47 @@ fieldset {
   font-family: 'Apple Chancery', sans-serif;
   border: #eb3aa4 5px solid;
   text-align: center;
-                                                
+}
+
+/*Pub works styles */
+.worksPublished {
+  display: flex;
+  justify-content: center;
+
+}
+
+.pubImgs {
+  padding-right: 4px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+}
+
+.column {
+  flex: 50%;
+  vertical-align: middle;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.why {
+  display: flex;
+  justify-content: center;
+}
+
+.welcomeContent {
+  display: grid;
+  justify-content: center;
+}
+
+.newsContainer {
+  display: grid;
+  justify-content: center;
+  wid
 }

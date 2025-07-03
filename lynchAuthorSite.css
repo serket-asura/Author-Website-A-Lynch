@@ -39,7 +39,7 @@ body {
 }
 /* author logo stats top nav */
 .logo {
-    float:right;
+    float:left;
     width: inherit;
     height: 45px;
 }
